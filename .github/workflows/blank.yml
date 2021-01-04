@@ -21,5 +21,5 @@ jobs:
     - name: Build Doublel.UseCases.NetCore.EntityAccessor
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-          PROJECT_FILE_PATH: src/Doublel.UseCases/Doublel.UseCases.NetCore.EntityAccessor.csproj
+          PROJECT_FILE_PATH: src/Doublel.UseCases.NetCore.EntityAccessor/Doublel.UseCases.NetCore.EntityAccessor.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
