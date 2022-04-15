@@ -42,7 +42,7 @@ namespace Dobulel.UseCases.EntityAccessor
 
             if(!string.IsNullOrEmpty(search.UseCaseName))
             {
-                query = query.Where(x => x.UseCaseName.Contains(search.UseCaseName));
+                query = query.Where(x => x.UseCaseId.Contains(search.UseCaseName));
             }
 
             var resultQueryPaged = query.OrderByDescending(x => x.ExecutedTime);
@@ -68,7 +68,7 @@ namespace Dobulel.UseCases.EntityAccessor
                 ActorIdentity = log.ActorIdentity,
                 Status = log.Status,
                 UseCaseData = JsonConvert.SerializeObject(log.UseCaseData),
-                UseCaseName = log.UseCaseName
+                UseCaseId = log.UseCaseId
             });
 
             _context.SaveChanges();
