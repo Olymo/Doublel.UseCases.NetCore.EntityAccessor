@@ -93,5 +93,16 @@ namespace Dobulel.UseCases.NetCore.EntityAccessor
 
             return executor.ExecuteUseCase(useCase, handler);
         }
+
+        public Empty Delete<TEntity, TUseCase>(TUseCase useCase)
+            where TUseCase : UseCase<int, Empty>
+            where TEntity : Entity
+        {
+            var executor = _provider.GetService<UseCaseExecutor<TUseCase, int, Empty>>();
+            var accessor = _provider.GetService<Doublel.EntityAccessor.EntityAccessor>();
+            var handler = new EfGenericDeleteHandler<TUseCase, TEntity>(accessor);
+
+            return executor.ExecuteUseCase(useCase, handler);
+        }
     }
 }
