@@ -1,10 +1,11 @@
 ﻿using Dobulel.UseCases.EntityAccessor;
 using Doublel.EntityAccessor;
+using Doublel.UseCases;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Doublel.UseCases.NetCore.EntityAccessor
+namespace Dobulel.UseCases.EntityAccessor
 {
     public class EfGenericDeleteHandler<TUseCase, TEntity> : EfCommandUseCaseHandler<TUseCase, int, TEntity>
         where TUseCase : UseCase<int, Empty>
