@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Doublel.UseCases.NetCore.EntityAccessor</PackageId>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
     <Authors>Luka Lukić</Authors>
     <Company>Olymo</Company>
     <Description>
@@ -15,9 +15,9 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="Doublel.EntityAccessor" Version="1.2.0" />
+    <PackageReference Include="Doublel.EntityAccessor" Version="1.2.1" />
     <PackageReference Include="Doublel.QueryableBuilder" Version="1.2.2" />
-    <PackageReference Include="Doublel.UseCases" Version="2.0.0" />
+    <PackageReference Include="Doublel.UseCases" Version="2.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
